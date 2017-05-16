@@ -1,3 +1,35 @@
+{VARIABLE
+    one, two : fichier d'entier
+    i : entier
+    
+DEBUT
+    ASSIGNER(one, one)
+    ASSIGNER(two, two)
+    REECRIRE(one)
+    
+    POUR i de 1 a 10 faire
+        ECRIRE(one,i)
+        
+    OUVRIR(one)
+    REECRIRE(two)
+    
+    TANT QUE NON FinDEFIchier(one) FAIRE
+        LIRE(one,i)
+        ECRIRE(two,i)
+    FINTANTQUE
+    
+    FEMER(one)
+    OUVRIR(two)
+    
+    TANT QUE NON FinDEFIchier(two) FAIRE
+        LIRE(two,i)
+        ECRIRE(i)
+    FINTANTQUE
+    
+    FERMER(two)
+FIN.
+}
+
 program multiply;
 
 VAR
